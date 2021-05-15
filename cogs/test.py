@@ -10,8 +10,8 @@ class Test(commands.Cog):
         print(f"{self.__class__.__name__} Cog Загружен успешно\n-----")
 
     @commands.command()
-    async def say(self, ctx, *args):
-        await ctx.send(",".join(args))
+    async def test(self, ctx):
+        await ctx.send("test done!")
 
 
 def setup(bot):
